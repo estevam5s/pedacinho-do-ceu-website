@@ -1,11 +1,10 @@
 <div align="center">
-  <!--
+  
   ![GitHub repo size](https://img.shields.io/github/repo-size/estevam5s/pedacinho-do-ceu)
   ![GitHub stars](https://img.shields.io/github/stars/estevam5s/pedacinho-do-ceu?style=social)
   ![GitHub forks](https://img.shields.io/github/forks/estevam5s/pedacinho-do-ceu?style=social)
-  [![Twitter Follow](https://img.shields.io/twitter/follow/estevam5s_?style=social)](https://twitter.com/intent/follow?screen_name=estevam5s_)
-  [![YouTube Video Views](https://img.shields.io/youtube/views/CjVGp5kGHxA?style=social)](https://youtu.be/CjVGp5kGHxA)
-  --->
+  [![Twitter Follow](https://img.shields.io/twitter/follow/estevamSouza199?style=social)](https://twitter.com/intent/follow?screen_name=estevamSouza199)
+  
   <br />
   <br />
 
@@ -20,6 +19,8 @@
 <br />
 
 ### Demo Screeshots
+
+![Grilli Desktop Demo](./readme-images/desktop.png "Desktop Demo")
 
 ### Prerequisites
 
