@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Bar e Restaurante - Pedacinho Do Céu</title>
+  <meta name="title" content="Restaurante - Pedacinho Do Céu">
+  <meta name="description" content="Este é um modelo HTML de restaurante feito por Estevam Souza">
+
+  <link rel="shortcut icon" href="zenaide.jpeg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg">
+
+</head>
+
+<body id="top">
+
+  <!-- 
+    - #PRELOADER
+  -->
+
+  <div class="preload" data-preaload>
+    <div class="circle"></div>
+    <p class="text">Restaurante</p>
+  </div>
+
+
+
+
+
+  <!-- 
+    - #TOP BAR
+  -->
+
+  <div class="topbar">
+    <div class="container">
+
+      <address class="topbar-item">
+        <div class="icon">
+          <ion-icon name="location-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">
+          Restaurante Pedacinho do céu, Floripa, SC
+        </span>
+      </address>
+
+      <div class="separator"></div>
+
+      <div class="topbar-item item-2">
+        <div class="icon">
+          <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">Aberto : 10.00 am até 23.00 pm</span>
+      </div>
+
+      <a href="tel:+554832377280" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">+55 (48) 3237-7280</span>
+      </a>
+
+      <div class="separator"></div>
+
+      <a href="mailto:pedacinhodoceu@restaurant.com" class="topbar-item link">
+        <div class="icon">
+          <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+        </div>
+
+        <span class="span">pedacinhodoceu@restaurant.com</span>
+      </a>
+
+    </div>
+  </div>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+
+
+      <nav class="navbar" data-navbar>
+
+        <button class="close-btn" aria-label="close menu" data-nav-toggler>
+          <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="#" class="logo">
+          <img src="./assets/images/zenaide.png" width="160" height="50" alt="Restaurante - Home">
+        </a>
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <a href="#home" class="navbar-link hover-underline active">
+              <div class="separator"></div>
+
+              <span class="span">Home</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#menu" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Menu</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#about" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Sobre</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#cardapio" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Cardápio</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#chefs" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Chefs</span>
+            </a>
+          </li>
+
+          <li class="navbar-item">
+            <a href="#contato" class="navbar-link hover-underline">
+              <div class="separator"></div>
+
+              <span class="span">Contato</span>
+            </a>
+          </li>
+
+        </ul>
+
+        <div class="text-center">
+          <p class="headline-1 navbar-title">Visite-Nos</p>
+
+          <address class="body-4">
+            Bar e Restaurante - Pedacinho Do Céu, <br>
+            Floripa, SC
+          </address>
+
+          <p class="body-4 navbar-text">Aberto: 10.00 am até 23.00 pm</p>
+
+          <a href="mailto:pedacinhodoceu@restaurant.com" class="body-4 sidebar-link">pedacinhodoceu@restaurant.com</a>
+
+          <div class="separator"></div>
+
+          <p class="contact-label">Pedido de reserva</p>
+
+          <a href="tel:+88123123456" class="body-1 contact-number hover-underline">
+            +55 (48) 3237-7280
+          </a>
+        </div>
+
+      </nav>
+
+      <a href="#noticias" class="btn btn-secondary">
+        <span class="text text-1">Receba notícias e ofertas</span>
+
+        <span class="text text-2" aria-hidden="true">Receba notícias e ofertas</span>
+      </a>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <span class="line line-1"></span>
+        <span class="line line-2"></span>
+        <span class="line line-3"></span>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="hero text-center" aria-label="home" id="home">
+
+        <ul class="hero-slider" data-hero-slider>
+
+          <li class="slider-item active" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-1.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">TRADIÇÃO E HIGIENE</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Pelo amor de <br>
+              comida deliciosa
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Venha com a família e sinta a alegria de uma comida de dar água na boca
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Ver Menu</span>
+
+              <span class="text text-2" aria-hidden="true">Ver Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-2.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">EXPERIÊNCIA DELICIOSA</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Sabores inspirados nas <br>
+              Estações
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Venha com a família e sinta a alegria de uma comida de dar água na boca
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Ver Menu</span>
+
+              <span class="text text-2" aria-hidden="true">Ver Menu</span>
+            </a>
+
+          </li>
+
+          <li class="slider-item" data-hero-slider-item>
+
+            <div class="slider-bg">
+              <img src="./assets/images/hero-slider-3.jpg" width="1880" height="950" alt="" class="img-cover">
+            </div>
+
+            <p class="label-2 section-subtitle slider-reveal">incrível e delicioso</p>
+
+            <h1 class="display-1 hero-title slider-reveal">
+              Onde cada sabor <br>
+              conta uma história
+            </h1>
+
+            <p class="body-2 hero-text slider-reveal">
+              Venha com a família e sinta a alegria de uma comida de dar água na boca
+            </p>
+
+            <a href="#" class="btn btn-primary slider-reveal">
+              <span class="text text-1">Ver Menu</span>
+
+              <span class="text text-2" aria-hidden="true">Ver Menu</span>
+            </a>
+
+          </li>
+
+        </ul>
+
+        <button class="slider-btn prev" aria-label="slide to previous" data-prev-btn>
+          <ion-icon name="chevron-back"></ion-icon>
+        </button>
+
+        <button class="slider-btn next" aria-label="slide to next" data-next-btn>
+          <ion-icon name="chevron-forward"></ion-icon>
+        </button>
+
+        <a href="#reservar" class="hero-btn has-after">
+
+          <img src="./assets/images/hero-icon.png" width="48" height="48" alt="booking icon">
+
+          <span class="label-2 text-center span">Reservar uma mesa</span>
+        </a><span class="label-2 text-center span">Reservar uma mesa</span>
+
+
+      </section>
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service bg-black-10 text-center" aria-label="service">
+        <div class="container">
+
+          <p class="section-subtitle label-2">SABORES PARA REALEZA</p>
+
+          <h2 class="headline-1 section-title">Oferecemos alto nível</h2>
+
+          <p class="section-text">
+            Aqui no Restaurante Pedacinho do Céu, oferecemos uma experiência gastronômica única, com pratos deliciosos e
+            um ambiente aconchegante.
+          </p>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-1.jpg" width="285" height="336" loading="lazy" alt="Café da manhã"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Café da manhã</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">Ver Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-2.jpg" width="285" height="336" loading="lazy" alt="Aperitivos"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Aperitivos</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">Ver Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <a href="#" class="has-before hover:shine">
+                  <figure class="card-banner img-holder" style="--width: 285; --height: 336;">
+                    <img src="./assets/images/service-3.jpg" width="285" height="336" loading="lazy" alt="Drinks"
+                      class="img-cover">
+                  </figure>
+                </a>
+
+                <div class="card-content">
+
+                  <h3 class="title-4 card-title">
+                    <a href="#">Drinks</a>
+                  </h3>
+
+                  <a href="#" class="btn-text hover-underline label-2">Ver Menu</a>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-1.png" width="246" height="412" loading="lazy" alt="shape"
+            class="shape shape-1 move-anim">
+          <img src="./assets/images/shape-2.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="section about text-center" aria-labelledby="about-label" id="about">
+        <div class="container">
+
+          <div class="about-content">
+
+            <p class="label-2 section-subtitle" id="about-label">Nossa história</p>
+
+            <h2 class="headline-1 section-title">Cada sabor conta uma história</h2>
+
+            <p class="section-text">
+              Dona Zenaide, uma mãe solteira com oito filhos, começou a vender seus quitutes em um quiosque à beira-mar
+              há mais de 30
+              anos. Ela aprendeu a culinária local com sua mãe e a arte da pesca com seu pai, tornando-se a única mulher
+              pescadora de
+              tainha no Pântano do Sul. Um dia, enquanto admirava a beleza do mar e do céu, decidiu transformar seu
+              quiosque em um
+              restaurante chamado "Pedacinho do Céu", que oferecia peixes e frutos do mar frescos pescados ali mesmo.
+              Dona Zenaide
+              comanda o restaurante com amor e atende pessoalmente aos clientes, compartilhando histórias e poemas com
+              simpatia e bom
+              humor. Ela é carinhosamente conhecida como Capitã Zenaide e seu restaurante é como um grande navio onde
+              ela comanda
+              pratos saborosos e histórias encantadoras.
+            </p>
+
+            <div class="contact-label">Book Through Call</div>
+
+            <a href="tel:+804001234567" class="body-1 contact-number hover-underline">+55 (48) 3237-7280</a>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">Read More</span>
+
+              <span class="text text-2" aria-hidden="true">Read More</span>
+            </a>
+
+          </div>
+
+          <figure class="about-banner">
+
+            <img src="./assets/images/about-banner.jpg" width="570" height="570" loading="lazy" alt="about banner"
+              class="w-100" data-parallax-item data-parallax-speed="1">
+
+            <div class="abs-img abs-img-1 has-before" data-parallax-item data-parallax-speed="1.75">
+              <img src="./assets/images/about-abs-image.jpg" width="285" height="285" loading="lazy" alt=""
+                class="w-100">
+            </div>
+
+          </figure>
+
+          <img src="./assets/images/shape-3.png" width="197" height="194" loading="lazy" alt="" class="shape">
+
+        </div>
+      </section>
+
+      <!-- 
+        - #PRATO ESPECIAL
+      -->
+
+      <section class="special-dish text-center" aria-labelledby="dish-label">
+
+        <div class="special-dish-banner">
+          <img src="./assets/images/special-dish-banner.jpg" width="940" height="900" loading="lazy"
+            alt="PRATO ESPECIAL" class="img-cover">
+        </div>
+
+        <div class="special-dish-content bg-black-10">
+          <div class="container">
+
+            <img src="./assets/images/badge-1.png" width="28" height="41" loading="lazy" alt="badge" class="abs-img">
+
+            <p class="section-subtitle label-2">PRATO ESPECIAL</p>
+
+            <h2 class="headline-1 section-title">Espetinho de Camarão</h2>
+
+            <p class="section-text">
+              Espetinho de camarão com molho de alho e ervas, acompanhado de arroz e batata frita.
+              Essa sem dúvida é uma das melhores opções do nosso cardápio.
+            </p>
+
+            <div class="wrapper">
+              <del class="del body-3">R$40.00</del>
+
+              <span class="span body-1">R$44.00</span>
+            </div>
+
+            <a href="#" class="btn btn-primary">
+              <span class="text text-1">VEr Menu</span>
+
+              <span class="text text-2" aria-hidden="true">View All Menu</span>
+            </a>
+
+          </div>
+        </div>
+
+        <img src="./assets/images/shape-4.png" width="179" height="359" loading="lazy" alt="" class="shape shape-1">
+
+        <img src="./assets/images/shape-9.png" width="351" height="462" loading="lazy" alt="" class="shape shape-2">
+
+      </section>
+
+      <!-- 
+        - #MENU
+      -->
+
+      <section class="section menu" aria-label="menu-label" id="menu">
+        <div class="container">
+
+          <p class="section-subtitle text-center label-2">Seleção Especial</p>
+
+          <h2 class="headline-1 section-title text-center">Delícias do Menu</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-1.png" width="100" height="100" loading="lazy" alt="Greek Salad"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Peixe na Brasa</a>
+                    </h3>
+
+                    <span class="badge label-1">Tradicional</span>
+
+                    <span class="span title-2">R$139.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Peixe na brasa, acompanhado de arroz e batata frita.
+                    Também é um prato tradicional do nosso cardápio.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-2.png" width="100" height="100" loading="lazy" alt="Ostra Gratinada"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Ostra Gratinada</a>
+                    </h3>
+
+                    <span class="span title-2">R$76.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Esse petisco é uma das nossas especialidades, feito com os mais variados frutos do mar.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-3.png" width="100" height="100" loading="lazy" alt="Petisco da Capitã"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Petisco da Capitã</a>
+                    </h3>
+
+                    <span class="span title-2">R$189.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Esse prato é uma das nossas especialidades, feito com os mais variados frutos do mar.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-4.png" width="100" height="100" loading="lazy" alt="Risoto de Camarão"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Risoto de Camarão</a>
+                    </h3>
+
+                    <span class="badge label-1">New</span>
+
+                    <span class="span title-2">R$159.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Esse prato sem dúvida é um dos mais pedidos do nosso cardápio.
+                    Feito com muito amor pela nossa capitã.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-5.png" width="100" height="100" loading="lazy" alt="Camarão à Milanesa"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Camarão à Milanesa</a>
+                    </h3>
+
+                    <span class="span title-2">R$169.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Esse prato é acompanhado por arroz e batata frita.
+                    Também tem a opção de pedir apenas o petisco.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="menu-card hover:card">
+
+                <figure class="card-banner img-holder" style="--width: 100; --height: 100;">
+                  <img src="./assets/images/menu-6.png" width="100" height="100" loading="lazy" alt="Prato do Pescador"
+                    class="img-cover">
+                </figure>
+
+                <div>
+
+                  <div class="title-wrapper">
+                    <h3 class="title-3">
+                      <a href="#" class="card-title">Prato do Pescador</a>
+                    </h3>
+
+                    <span class="span title-2">R$51.00</span>
+                  </div>
+
+                  <p class="card-text label-1">
+                    Esse PF também tem a opção de pedir de Frango ou Peixe.
+                    Acompanha arroz, feijão, salada e batata frita.
+                  </p>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <p class="menu-text text-center">
+            Durante o inverno diariamente a partir de <span class="span">10:00 pm</span> to <span class="span">19:30
+              pm</span>
+          </p>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">Ver Menu</span>
+
+            <span class="text text-2" aria-hidden="true">View All Menu</span>
+          </a>
+
+          <img src="./assets/images/shape-5.png" width="921" height="1036" loading="lazy" alt="shape"
+            class="shape shape-2 move-anim">
+          <img src="./assets/images/shape-6.png" width="343" height="345" loading="lazy" alt="shape"
+            class="shape shape-3 move-anim">
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #TESTIMONIALS
+      -->
+
+      <section class="section testi text-center has-bg-image"
+        style="background-image: url('./assets/images/testimonial-bg.jpg')" aria-label="testimonials">
+        <div class="container">
+
+          <div class="quote">”</div>
+
+          <p id="chefs" class="headline-2 testi-text">
+            Queria agradecer por me convidar para aquele jantar incrível naquela noite. A comida era extraordinária.
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <div class="profile">
+            <img src="./assets/images/testi-avatar.jpg" width="100" height="100" loading="lazy" alt="Rebeca Luize"
+              class="img">
+
+            <p class="label-2 profile-name">Rebeca Luize</p>
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #RESERVATION
+      -->
+
+      <section class="reservation" id="Reservas">
+        <div class="container">
+
+          <div class="form reservation-form bg-black-10">
+
+            <form action="" class="form-left">
+
+              <h2 class="headline-1 text-center">Reservas</h2>
+
+              <p class="form-text text-center">
+                Solicite reserva <a href="tel:+88123123456" class="link">+55 (48) 3237-7280</a>
+                ou preencha o formulário de pedido
+              </p>
+
+              <div class="input-wrapper" id="reservar">
+                <input type="text" name="name" placeholder="Seu Nome" autocomplete="off" class="input-field">
+
+                <input type="tel" name="telefone" placeholder="Número de telefone" autocomplete="off"
+                  class="input-field">
+              </div>
+
+              <div class="input-wrapper">
+
+                <div class="icon-wrapper">
+                  <ion-icon name="pessoa-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="pessoa" class="input-field">
+                    <option value="1-pessoa">1 Pessoa</option>
+                    <option value="2-pessoa">2 Pessoa</option>
+                    <option value="3-pessoa">3 Pessoa</option>
+                    <option value="4-pessoa">4 Pessoa</option>
+                    <option value="5-pessoa">5 Pessoa</option>
+                    <option value="6-pessoa">6 Pessoa</option>
+                    <option value="7-pessoa">7 Pessoa</option>
+                    <option value="7-pessoa">8 Pessoa</option>
+                    <option value="7-pessoa">9 Pessoa</option>
+                    <option value="7-pessoa">10 Pessoa</option>
+                    <option value="7-pessoa">10+ Pessoa</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+                <div class="icon-wrapper">
+                  <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
+
+                  <select name="pessoa" class="input-field">
+                    <option value="09:30am">09 : 30 am</option>
+                    <option value="010:00am">10 : 00 am</option>
+                    <option value="011:00am">11 : 00 am</option>
+                    <option value="012:00am">12 : 00 am</option>
+                    <option value="01:00pm">01 : 00 pm</option>
+                    <option value="02:00pm">02 : 00 pm</option>
+                    <option value="03:00pm">03 : 00 pm</option>
+                    <option value="04:00pm">04 : 00 pm</option>
+                    <option value="05:00pm">05 : 00 pm</option>
+                    <option value="06:00pm">06 : 00 pm</option>
+                    <option value="07:00pm">07 : 00 pm</option>
+                    <option value="08:00pm">08 : 00 pm</option>
+                    <option value="09:00pm">09 : 00 pm</option>
+                    <option value="10:00pm">10 : 00 pm</option>
+                  </select>
+
+                  <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
+                </div>
+
+              </div>
+
+              <textarea name="mensagem" placeholder="Mensagem" autocomplete="off" class="input-field"></textarea>
+
+              <button type="submit" class="btn btn-secondary">
+                <span class="text text-1">Reservar uma mesa</span>
+
+                <span class="text text-2" aria-hidden="true">Reservar uma mesa</span>
+              </button>
+
+            </form>
+
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+              <h2 id="contato" class="headline-1 text-center">Contato</h2>
+
+              <p class="contact-label">Pedido de reserva</p>
+
+              <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+55 (48) 3237-7280</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Localização</p>
+
+              <address class="body-4">
+                Restaurante Pedacinho do céu, <br>
+                Floripa, SC
+              </address>
+
+              <p class="contact-label">Café</p>
+
+              <p class="body-4">
+                de segunda a Domingo <br>
+                09.30 am - 12.00pm
+              </p>
+
+              <p class="contact-label">Almoço</p>
+
+              <p class="body-4">
+                de segunda a Domingo <br>
+                12.00 pm - 18.00pm
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- 
+        - #FEATURES
+      -->
+
+      <section class="section features text-center" aria-label="features">
+        <div class="container">
+
+          <p class="section-subtitle label-2">PORQUE ESCOLHER-NOS</p>
+
+          <h2 class="headline-1 section-title">Nossa força</h2>
+
+          <ul class="grid-list">
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-1.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Alimentos Higiênicos</h3>
+
+                <p class="label-1 card-text">Nossas comidas são preparadas com os melhores ingredientes e com muito
+                  cuidado.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-2.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Ambiente Fresco</h3>
+
+                <p class="label-1 card-text">Nosso restaurante é muito bem arejado e com um ambiente agradável com uma
+                  vista de tirar o fôlego.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-3.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Chefs qualificados</h3>
+
+                <p class="label-1 card-text">Nossos chefs são muito bem qualificados e com muita experiência no ramo da
+                  culinária.</p>
+
+              </div>
+            </li>
+
+            <li class="feature-item">
+              <div class="feature-card">
+
+                <div class="card-icon">
+                  <img src="./assets/images/features-icon-4.png" width="100" height="80" loading="lazy" alt="icon">
+                </div>
+
+                <h3 class="title-2 card-title">Evento e Festa</h3>
+
+                <p class="label-1 card-text">Caso queira fazer um evento ou festa, temos um espaço reservado para
+                  isso.</p>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <img src="./assets/images/shape-7.png" width="208" height="178" loading="lazy" alt="shape"
+            class="shape shape-1">
+
+          <img src="./assets/images/shape-8.png" width="120" height="115" loading="lazy" alt="shape"
+            class="shape shape-2">
+
+        </div>
+      </section>
+
+      <!-- 
+        - #EVENT
+      -->
+
+      <section class="section event bg-black-10" aria-label="event">
+        <div class="container">
+
+          <p class="section-subtitle label-2 text-center">Atualizações Recentes</p>
+
+          <h2 class="section-title headline-1 text-center">Próximos eventos</h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="./assets/images/event-1.jpg" width="350" height="450" loading="lazy"
+                    alt="Venha ver o jogo da seleção com a gente." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-15">09/12/2022</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Jogo da Seleção ao vivo</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Venha ver o jogo da seleção com a gente.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="./assets/images/event-2.jpg" width="350" height="450" loading="lazy"
+                    alt="Venha comemorar o dia dos pais aqui no nosso restaurante." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-08">11/08/2023</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Dia dos Pais</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Venha comemorar o dia dos pais aqui no nosso restaurante.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="event-card has-before hover:shine">
+
+                <div class="card-banner img-holder" style="--width: 350; --height: 450;">
+                  <img src="./assets/images/event-3.jpg" width="350" height="450" loading="lazy"
+                    alt="Hoje a noite teremos a janta da Tainha, uma celebracão da pesca da Tainha." class="img-cover">
+
+                  <time class="publish-date label-2" datetime="2022-09-03">03/05/2023</time>
+                </div>
+
+                <div class="card-content">
+                  <p class="card-subtitle label-2 text-center">Pesca da Tainha</p>
+
+                  <h3 class="card-title title-2 text-center">
+                    Hoje a noite teremos a janta da Tainha, uma celebracão da pesca da Tainha.
+                  </h3>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+          <a href="#" class="btn btn-primary">
+            <span class="text text-1">VEJA NOSSO BLOG</span>
+
+            <span class="text text-2" aria-hidden="true">VEJA NOSSO BLOG</span>
+          </a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer section has-bg-image text-center"
+    style="background-image: url('./assets/images/footer-bg.jpg')">
+    <div class="container">
+
+      <div class="footer-top grid-list">
+
+        <div class="footer-brand has-before has-after">
+
+          <a href="#" class="logo">
+            <img src="./assets/images/zenaide.png" width="160" height="50" loading="lazy" alt="Restaurante home">
+          </a>
+
+          <address class="body-4">
+            Bar e Restaurante - Pedacinho Do Céu, <br>
+            Floripa, SC
+          </address>
+
+          <a href="mailto:booking@Restaurante.com" class="body-4 contact-link">pedacinhodoceu@restaurant.com</a>
+
+          <a href="tel:+88123123456" class="body-4 contact-link">Booking Request : +55 (48) 3237-7280</a>
+
+          <p class="body-4">
+            Aberto : 10.00 am até 23.00 pm
+          </p>
+
+          <div class="wrapper">
+            <div class="separator"></div>
+            <div class="separator"></div>
+            <div class="separator"></div>
+          </div>
+
+          <p id="noticias" class="title-1">Receba notícias e ofertas </p>
+
+          <p class="label-1">
+            Inscreva-se e receba <span class="span">3% Off.</span>
+          </p>
+
+          <form action="" class="input-wrapper">
+            <div class="icon-wrapper">
+              <ion-icon name="mail-outline" aria-hidden="true"></ion-icon>
+
+              <input type="email" name="email_address" placeholder="Seu e-mail" autocomplete="off" class="input-field">
+            </div>
+
+            <button type="submit" class="btn btn-secondary">
+              <span class="text text-1">Subscribe</span>
+
+              <span class="text text-2" aria-hidden="true">Subscribe</span>
+            </button>
+          </form>
+
+        </div>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="#home" class="label-2 footer-link hover-underline">Home</a>
+          </li>
+
+          <li>
+            <a href="#menu" class="label-2 footer-link hover-underline">Menu</a>
+          </li>
+
+          <li>
+            <a href="#about" class="label-2 footer-link hover-underline">Sobre</a>
+          </li>
+
+          <li>
+            <a href="#cardapio" class="label-2 footer-link hover-underline">Cardápio</a>
+          </li>
+
+          <li>
+            <a href="#chefs" class="label-2 footer-link hover-underline">Chefs</a>
+          </li>
+
+          <li>
+            <a href="#contato" class="label-2 footer-link hover-underline">Contato</a>
+          </li>
+
+        </ul>
+
+        <ul class="footer-list">
+
+          <li>
+            <a href="https://www.facebook.com/restaurantepedacinho/?locale=pt_BR"
+              class="label-2 footer-link hover-underline">Facebook</a>
+          </li>
+
+          <li>
+            <a href="https://www.instagram.com/pedacinhodoceurestaurante/"
+              class="label-2 footer-link hover-underline">Instagram</a>
+          </li>
+
+          <li>
+            <a href="https://www.google.com/maps?sca_esv=567933587&output=search&q=bar+e+restaurante+pedacinho+do+c%C3%A9u&source=lnms&entry=mc&sa=X&ved=2ahUKEwi0jIvfrMKBAxVeI7kGHd9XA8cQ0pQJegQIDRAB"
+              class="label-2 footer-link hover-underline">Google Map</a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <div class="footer-bottom">
+
+        <p class="copyright">
+          &copy; 2023 Restaurante. Todos os direitos reservados | Feito por <a
+            href="https://estevamsouza-dev.vercel.app/" target="_blank" class="link">Estevam</a>
+        </p>
+
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- 
+    - #BACK TO TOP
+  -->
+
+  <a href="#top" class="back-top-btn active" aria-label="back to top" data-back-top-btn>
+    <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+  </a>
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
