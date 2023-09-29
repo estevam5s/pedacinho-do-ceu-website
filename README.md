@@ -12,7 +12,7 @@
 
   Pedacinho do Céu is a fully responsive restaurant website, <br />Responsive for all devices, build using HTML, CSS, and JavaScript.
 
-  <a href="https://pedacinhodoceuwebsite.vercel.app"><strong>➥ Live Demo</strong></a>
+  <a href="https://pedacinhodoceu.website"><strong>➥ Live Demo</strong></a>
 
 </div>
 
