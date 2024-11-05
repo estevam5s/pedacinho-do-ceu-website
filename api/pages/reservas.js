@@ -109,16 +109,15 @@
 //   }
 // }
 
-
 import nodemailer from 'nodemailer';
 
 const transporter = nodemailer.createTransport({
   host: 'smtp.zoho.com', // Servidor SMTP da Zoho
   port: 465, // Porta para SSL
-  secure: true,
+  secure: true, // true para 465
   auth: {
-    user: process.env.EMAIL_USER, // Variável de ambiente para o e-mail
-    pass: process.env.EMAIL_PASS, // Variável de ambiente para a senha do aplicativo
+    user: 'contato@estevamsouza.com.br', // Seu e-mail
+    pass: '0Q4xjGxjQB03', // Sua senha de aplicativo
   },
 });
 
@@ -180,3 +179,6 @@ export default async function handler(req, res) {
     return res.status(405).json({ error: `Método ${req.method} não permitido.` });
   }
 }
+
+
+
