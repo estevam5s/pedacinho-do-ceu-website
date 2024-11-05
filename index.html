@@ -774,23 +774,31 @@
 
       <section class="reservation" id="Reservas">
         <div class="container">
+
           <div class="form reservation-form bg-black-10">
-            <form action="/api/pages/sendEmail" method="POST" class="form-left">
+
+            <form action="" class="form-left">
+
               <h2 class="headline-1 text-center">Reservas</h2>
+
               <p class="form-text text-center">
-                Solicite reserva <a href="tel:+88123123456" class="link">+55 (48) 3237-7280</a> ou preencha o formulário de pedido
+                Solicite reserva <a href="tel:+88123123456" class="link">+55 (48) 3237-7280</a>
+                ou preencha o formulário de pedido
               </p>
-      
+
               <div class="input-wrapper" id="reservar">
-                <input type="text" name="firstname" placeholder="Seu Nome" autocomplete="off" class="input-field" required>
-                <input type="email" name="email" placeholder="Seu E-mail" autocomplete="off" class="input-field" required>
-                <input type="tel" name="phone" placeholder="Número de telefone" autocomplete="off" class="input-field" required>
+                <input type="text" name="name" placeholder="Seu Nome" autocomplete="off" class="input-field">
+
+                <input type="tel" name="telefone" placeholder="Número de telefone" autocomplete="off"
+                  class="input-field">
               </div>
-      
+
               <div class="input-wrapper">
+
                 <div class="icon-wrapper">
                   <ion-icon name="pessoa-outline" aria-hidden="true"></ion-icon>
-                  <select name="guests" class="input-field" required>
+
+                  <select name="pessoa" class="input-field">
                     <option value="1-pessoa">1 Pessoa</option>
                     <option value="2-pessoa">2 Pessoa</option>
                     <option value="3-pessoa">3 Pessoa</option>
@@ -798,27 +806,31 @@
                     <option value="5-pessoa">5 Pessoa</option>
                     <option value="6-pessoa">6 Pessoa</option>
                     <option value="7-pessoa">7 Pessoa</option>
-                    <option value="8-pessoa">8 Pessoa</option>
-                    <option value="9-pessoa">9 Pessoa</option>
-                    <option value="10-pessoa">10 Pessoa</option>
-                    <option value="10+-pessoa">10+ Pessoa</option>
+                    <option value="7-pessoa">8 Pessoa</option>
+                    <option value="7-pessoa">9 Pessoa</option>
+                    <option value="7-pessoa">10 Pessoa</option>
+                    <option value="7-pessoa">10+ Pessoa</option>
                   </select>
+
                   <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                 </div>
-      
+
                 <div class="icon-wrapper">
                   <ion-icon name="calendar-clear-outline" aria-hidden="true"></ion-icon>
-                  <input type="date" name="reservation_date" class="input-field" required>
+
+                  <input type="date" name="reservation-date" class="input-field">
+
                   <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                 </div>
-      
+
                 <div class="icon-wrapper">
                   <ion-icon name="time-outline" aria-hidden="true"></ion-icon>
-                  <select name="reservation_time" class="input-field" required>
+
+                  <select name="pessoa" class="input-field">
                     <option value="09:30am">09 : 30 am</option>
-                    <option value="10:00am">10 : 00 am</option>
-                    <option value="11:00am">11 : 00 am</option>
-                    <option value="12:00pm">12 : 00 pm</option>
+                    <option value="010:00am">10 : 00 am</option>
+                    <option value="011:00am">11 : 00 am</option>
+                    <option value="012:00am">12 : 00 am</option>
                     <option value="01:00pm">01 : 00 pm</option>
                     <option value="02:00pm">02 : 00 pm</option>
                     <option value="03:00pm">03 : 00 pm</option>
@@ -830,46 +842,59 @@
                     <option value="09:00pm">09 : 00 pm</option>
                     <option value="10:00pm">10 : 00 pm</option>
                   </select>
+
                   <ion-icon name="chevron-down" aria-hidden="true"></ion-icon>
                 </div>
+
               </div>
-      
-              <textarea name="message" placeholder="Mensagem" autocomplete="off" class="input-field"></textarea>
-              
+
+              <textarea name="mensagem" placeholder="Mensagem" autocomplete="off" class="input-field"></textarea>
+
               <button type="submit" class="btn btn-secondary">
                 <span class="text text-1">Reservar uma mesa</span>
+
                 <span class="text text-2" aria-hidden="true">Reservar uma mesa</span>
               </button>
+
             </form>
+
+            <div class="form-right text-center" style="background-image: url('./assets/images/form-pattern.png')">
+
+              <h2 id="contato" class="headline-1 text-center">Contato</h2>
+
+              <p class="contact-label">Pedido de reserva</p>
+
+              <a href="tel:+88123123456" class="body-1 contact-number hover-underline">+55 (48) 3237-7280</a>
+
+              <div class="separator"></div>
+
+              <p class="contact-label">Localização</p>
+
+              <address class="body-4">
+                Restaurante Pedacinho do céu, <br>
+                Floripa, SC
+              </address>
+
+              <p class="contact-label">Café</p>
+
+              <p class="body-4">
+                de segunda a Domingo <br>
+                09.30 am - 12.00pm
+              </p>
+
+              <p class="contact-label">Almoço e Janta</p>
+
+              <p class="body-4">
+                de segunda a Domingo <br>
+                12.00 pm - 23.00pm
+              </p>
+
+            </div>
+
           </div>
+
         </div>
       </section>
-
-      <script>
-        document.getElementById('reservationForm').addEventListener('submit', async function(event) {
-          event.preventDefault();
-        
-          const formData = new FormData(event.target);
-          const data = Object.fromEntries(formData.entries());
-        
-          try {
-            const response = await fetch('/api/sendEmail', {
-              method: 'POST',
-              headers: { 'Content-Type': 'application/json' },
-              body: JSON.stringify(data)
-            });
-        
-            if (response.ok) {
-              alert('Reserva confirmada e e-mail enviado com sucesso!');
-            } else {
-              alert('Erro ao enviar a reserva. Tente novamente.');
-            }
-          } catch (error) {
-            console.error('Erro:', error);
-            alert('Erro ao enviar a reserva.');
-          }
-        });
-        </script>
 
       <!-- 
         - #FEATURES
